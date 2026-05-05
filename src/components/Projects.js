@@ -93,7 +93,14 @@ function Projects() {
                 }
               }}
             >
-              <div className="project-image-placeholder">
+              <div
+                className="project-image-placeholder"
+                style={
+                  project.image ? { backgroundImage: `url(${project.image})` } : undefined
+                }
+                aria-label={project.imageAlt ?? `${project.title} preview`}
+                role="img"
+              >
                 <span className="project-type">{project.type}</span>
                 <div className="project-overlay">{project.title}</div>
               </div>
@@ -130,11 +137,29 @@ function Projects() {
             <p>{activeProjectDetails?.overview ?? activeProject.description}</p>
             <div className="project-modal-media-grid">
               <div className="project-modal-image-block">
-                <div className="project-modal-image project-modal-image-left" />
+                <div
+                  className="project-modal-image project-modal-image-left"
+                  style={
+                    activeProject.image
+                      ? { backgroundImage: `url(${activeProject.image})` }
+                      : undefined
+                  }
+                  aria-label={activeProject.imageAlt ?? `${activeProject.title} preview`}
+                  role="img"
+                />
                 <p>{activeProjectDetails?.leftImageLabel ?? 'Project Preview'}</p>
               </div>
               <div className="project-modal-image-block">
-                <div className="project-modal-image project-modal-image-right" />
+                <div
+                  className="project-modal-image project-modal-image-right"
+                  style={
+                    activeProject.image
+                      ? { backgroundImage: `url(${activeProject.image})` }
+                      : undefined
+                  }
+                  aria-label={activeProject.imageAlt ?? `${activeProject.title} preview`}
+                  role="img"
+                />
                 <p>{activeProjectDetails?.rightImageLabel ?? 'Responsive View'}</p>
               </div>
             </div>

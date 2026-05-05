@@ -405,6 +405,9 @@ a {
   position: relative;
   border: 1px solid rgba(130, 159, 216, 0.35);
   background: linear-gradient(140deg, rgba(30, 46, 82, 0.6), rgba(18, 28, 52, 0.55));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0.8rem;
   min-height: 175px;
   margin-bottom: 1rem;
@@ -511,6 +514,9 @@ a {
   min-height: 185px;
   border-radius: 0.8rem;
   border: 1px solid rgba(130, 159, 216, 0.35);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-modal-image-left {
