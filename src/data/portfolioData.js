@@ -1,57 +1,75 @@
 const services = [
   {
-    title: 'WordPress Website Development',
+    title: 'CMS Development & Customization',
     description:
-      'Custom WordPress websites designed for speed, credibility, and better client conversions.',
-    icon: 'WP',
+      'Experienced in building and customizing WordPress and Joomla websites with flexible architecture, strong performance, and easy content control.',
+    icon: 'CMS',
   },
   {
-    title: 'Elementor Customization & Fixes',
+    title: 'E-commerce Development',
     description:
-      'Layout fixes, responsive adjustments, and advanced Elementor customization for polished results.',
-    icon: 'EL',
+      'Skilled in developing and optimizing Shopify and BigCommerce stores, including product workflows, payment integration, and conversion improvements.',
+    icon: 'ECM',
   },
   {
-    title: 'Landing Page Design',
+    title: 'Custom Front-End Development',
     description:
-      'High-performing landing pages that communicate offers clearly and guide users to action.',
-    icon: 'LP',
+      'Modern, interactive applications built with HTML, CSS, JavaScript, React, and Next.js for speed, scalability, and maintainability.',
+    icon: 'FED',
+  },
+  {
+    title: 'Static Site Architecture',
+    description:
+      'Ultra-fast and SEO-friendly websites built with modern static site patterns that reduce overhead and improve performance.',
+    icon: 'SSG',
+  },
+  {
+    title: 'No-Code & Visual Builder Solutions',
+    description:
+      'Rapid professional website delivery using no-code tools and visual builders without sacrificing design quality or functionality.',
+    icon: 'NCD',
   },
 ];
 
 const projects = [
   {
-    title: 'SaaS Business Landing Page',
+    title: 'Full-Stack SaaS Marketing Platform',
     description:
-      'Premium dark UI concept built for a startup product launch with conversion-first sections.',
-    type: 'Landing Page',
+      'A conversion-focused web experience combining modern UI, reusable components, and scalable architecture for product growth.',
+    type: 'Full Stack',
   },
   {
-    title: 'Elementor Website Speed Fix',
+    title: 'Shopify Store Optimization',
     description:
-      'A before/after redesign demonstrating layout cleanup, optimization, and responsive fixes.',
-    type: 'Elementor Fix',
+      'An e-commerce optimization project focused on product discoverability, checkout flow, and performance improvements.',
+    type: 'E-commerce',
   },
   {
-    title: 'Agency Portfolio Website',
+    title: 'Next.js Business Website',
     description:
-      'A clean portfolio framework for freelancers with strong visual hierarchy and lead capture.',
-    type: 'Portfolio',
+      'A fast, SEO-friendly business website with responsive design, clear content structure, and maintainable component architecture.',
+    type: 'Custom Development',
   },
   {
-    title: 'Local Business Website Revamp',
+    title: 'Static Site for Service Brand',
     description:
-      'Modern redesign concept for a local service business focusing on trust and mobile conversion.',
-    type: 'Business Website',
+      'A lightweight static site project focused on loading speed, accessibility, and conversion-focused user journeys.',
+    type: 'Static Site',
   },
 ];
 
 const skills = [
   'WordPress',
-  'Elementor',
+  'Joomla',
+  'Shopify',
+  'BigCommerce',
   'HTML',
   'CSS',
   'JavaScript',
+  'React',
+  'Next.js',
+  'Static Site Architecture',
+  'No-Code Builders',
   'Responsive Design',
 ];
 

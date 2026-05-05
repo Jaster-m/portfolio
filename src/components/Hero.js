@@ -11,19 +11,18 @@ function Hero() {
         animate="visible"
       >
         <motion.p className="eyebrow" variants={fadeUp}>
-          Freelance Web Developer
+          Full Stack Web Designer & Developer
         </motion.p>
         <motion.h1 variants={fadeUp}>Talha</motion.h1>
-        <motion.h2 variants={fadeUp}>WordPress & Elementor Developer</motion.h2>
+        <motion.h2 variants={fadeUp}>Designing and building scalable web experiences</motion.h2>
         <motion.p className="hero-tagline" variants={fadeUp}>
-          I am a web developer specializing in WordPress and Elementor. I focus
-          on creating clean, responsive, and user-friendly websites that deliver
-          real results.
+          I design and develop high-performance, user-focused websites that
+          combine strong visual identity with robust technical architecture.
         </motion.p>
         <motion.p className="hero-tagline hero-tagline-secondary" variants={fadeUp}>
-          I help clients fix website issues, improve design, and build modern
-          landing pages. My goal is to provide fast, reliable, and practical
-          solutions that help businesses grow online.
+          With a full-stack approach, I build conversion-driven digital products
+          from front-end interfaces to back-end functionality, with speed,
+          usability, and maintainability at the core.
         </motion.p>
         <motion.div className="hero-actions" variants={fadeUp}>
           <a

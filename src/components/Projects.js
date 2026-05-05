@@ -5,53 +5,57 @@ import { fadeUp, staggerChildren } from '../animations';
 
 function Projects() {
   const projectDetails = {
-    'SaaS Business Landing Page': {
+    'Full-Stack SaaS Marketing Platform': {
       overview:
-        'A conversion-focused launch page built with clean visual hierarchy and clear user flow from hero section to call-to-action.',
+        'A conversion-driven full-stack marketing platform concept built to connect polished visual design with scalable application architecture.',
       highlights: [
-        'Built sections for features, trust proof, pricing, and final conversion CTA.',
-        'Optimized content spacing and typography for better readability.',
-        'Designed for strong first impression and clear business messaging.',
+        'Designed a complete user journey from product discovery to qualified lead capture.',
+        'Structured reusable front-end sections for maintainable growth-focused campaigns.',
+        'Aligned technical structure and interface design for speed and usability.',
       ],
       leftImageLabel: 'Desktop View',
       rightImageLabel: 'Mobile View',
     },
-    'Elementor Website Speed Fix': {
+    'Shopify Store Optimization': {
       overview:
-        'A practical optimization and cleanup project where layout issues were fixed and page speed was improved for better UX.',
+        'An e-commerce optimization engagement focused on improving storefront performance and reducing friction across the shopping experience.',
       highlights: [
-        'Resolved Elementor spacing and alignment issues on multiple sections.',
-        'Improved responsiveness for tablet and mobile screens.',
-        'Optimized structure to reduce clutter and improve performance.',
+        'Refined product listing and navigation flow to increase discoverability.',
+        'Improved checkout usability for a smoother conversion path.',
+        'Optimized store performance and layout behavior across devices.',
       ],
-      leftImageLabel: 'Before Layout',
-      rightImageLabel: 'After Optimization',
+      leftImageLabel: 'Storefront View',
+      rightImageLabel: 'Checkout Flow',
     },
-    'Agency Portfolio Website': {
+    'Next.js Business Website': {
       overview:
-        'A modern agency portfolio concept focused on service clarity, case study presentation, and stronger lead generation.',
+        'A modern business website built with Next.js to deliver fast load times, SEO strength, and a clear content architecture.',
       highlights: [
-        'Organized project showcase cards with cleaner navigation flow.',
-        'Improved section hierarchy to highlight services and testimonials.',
-        'Added conversion-focused contact and inquiry blocks.',
+        'Implemented responsive layout patterns for consistent cross-device quality.',
+        'Improved information hierarchy to make services and value clear.',
+        'Built for maintainability with reusable component-driven structure.',
       ],
-      leftImageLabel: 'Portfolio Sections',
-      rightImageLabel: 'Case Study Layout',
+      leftImageLabel: 'Landing Structure',
+      rightImageLabel: 'Responsive Sections',
     },
-    'Local Business Website Revamp': {
+    'Static Site for Service Brand': {
       overview:
-        'A complete visual refresh for a local business site to improve trust, usability, and mobile conversion performance.',
+        'A lightweight static website project centered on speed, accessibility, and SEO-friendly architecture for a service brand.',
       highlights: [
-        'Redesigned outdated sections with a clean modern style.',
-        'Improved mobile-first layouts for service and contact pages.',
-        'Strengthened calls-to-action to support lead generation.',
+        'Reduced complexity with a fast static-first delivery model.',
+        'Improved core page performance for quicker content access.',
+        'Designed conversion-oriented flows with clear calls to action.',
       ],
-      leftImageLabel: 'Old Design',
-      rightImageLabel: 'New Revamp',
+      leftImageLabel: 'Service Pages',
+      rightImageLabel: 'Mobile Experience',
     },
   };
 
   const [activeProject, setActiveProject] = useState(null);
+
+  const activeProjectDetails = activeProject
+    ? projectDetails[activeProject.title]
+    : null;
 
   return (
     <section className="section" id="projects">
@@ -123,21 +127,21 @@ function Projects() {
             </button>
             <span className="project-modal-badge">{activeProject.type}</span>
             <h3>{activeProject.title}</h3>
-            <p>{projectDetails[activeProject.title].overview}</p>
+            <p>{activeProjectDetails?.overview ?? activeProject.description}</p>
             <div className="project-modal-media-grid">
               <div className="project-modal-image-block">
                 <div className="project-modal-image project-modal-image-left" />
-                <p>{projectDetails[activeProject.title].leftImageLabel}</p>
+                <p>{activeProjectDetails?.leftImageLabel ?? 'Project Preview'}</p>
               </div>
               <div className="project-modal-image-block">
                 <div className="project-modal-image project-modal-image-right" />
-                <p>{projectDetails[activeProject.title].rightImageLabel}</p>
+                <p>{activeProjectDetails?.rightImageLabel ?? 'Responsive View'}</p>
               </div>
             </div>
             <div className="project-modal-details">
               <h4>Project Details</h4>
               <ul>
-                {projectDetails[activeProject.title].highlights.map((item) => (
+                {(activeProjectDetails?.highlights ?? []).map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>

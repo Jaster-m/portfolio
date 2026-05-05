@@ -20,28 +20,29 @@ function About() {
         <div>
         <h2 className="section-title">About</h2>
         <p className="section-text">
-          I am a web developer specializing in WordPress and Elementor. I focus
-          on creating clean, responsive, and user-friendly websites that deliver
-          real results.
+          I design and develop high-performance, user-focused websites that
+          combine strong visual identity with robust technical architecture. My
+          approach is rooted in solving real user problems while delivering
+          scalable, conversion-driven digital experiences.
         </p>
         <div className="about-details">
-          <h3>1. WordPress Website Development</h3>
+          <h3>1. Full-Stack Execution</h3>
           <p className="section-text">
-            I create clean, responsive, and professional WordPress websites
-            tailored to your needs. From landing pages to full business sites, I
-            focus on performance, usability, and modern design.
+            I work across both design and development layers, ensuring smooth
+            integration between front-end interfaces and back-end functionality
+            for reliable and scalable outcomes.
           </p>
-          <h3>2. Elementor Fixing &amp; Customization</h3>
+          <h3>2. Multi-Platform Web Solutions</h3>
           <p className="section-text">
-            I fix layout issues, design bugs, and responsiveness problems in
-            Elementor. Whether your website is broken or needs improvements, I
-            provide fast and effective solutions.
+            From dynamic web applications and e-commerce platforms to
+            lightweight static sites, I build with a focus on speed, usability,
+            SEO, and long-term maintainability.
           </p>
-          <h3>3. Landing Page Design</h3>
+          <h3>3. What I Deliver</h3>
           <p className="section-text">
-            I design high-converting landing pages that are visually appealing
-            and optimized for user experience, helping you turn visitors into
-            customers.
+            Responsive mobile-first designs, performance-optimized websites,
+            clean maintainable code, SEO-friendly structure, and user-centric
+            interfaces that support real business goals.
           </p>
         </div>
         </div>
